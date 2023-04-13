@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> 
+    <title>Meeting Minutes</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="cseicon.png">
+  </head>
+
+  <body>
+    <header>
+        <div>UCSD CSE110 Group Meeting</div>
+        <div>topic: brainstorming</div>
+        <nav>
+            <ul>
+                <li><a href="attendance">Attendance List</a></li>
+                <li><a href="agenda">Agenda</a></li>
+                <li><a href="unfinished">Unfinished Issues</a></li>
+                <li><a href="new">New Issues</a></li>
+                <li><a href="comment">Comment & Question</a></li>
+                <li><a href="multimedia">Images and multimedia</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>UCSD CSE110 Group Meeting</h1>
+
+        <hr>
+
+        <h2 id="attendance">Attendance List</h2>
+        <ol>
+            <li>Jiaen Yu</li>
+            <li>Anthony</li>
+            <li>Ronaldo</li>
+            <li>John</li>
+            <li>Bella</li>
+        </ol>
+
+        <hr>
+
+        <h2 id="agenda">Agenda</h2>
+        <ol>
+            <li><input type="checkbox"> Welcome and Introductions</li>
+            <li><input type="checkbox"> Review minutes from last meeting</li>
+            <li><input type="checkbox"> Old Business </li>
+            <li><input type="checkbox"> New Business</li>
+            <li><input type="checkbox"> Discuss any miscellaneous topics or concerns</li>
+            <li><input type="checkbox"> Recap the meeting's main points</li>
+        </ol>
+
+        <hr>
+
+        <h2 id="unfinished">Unfinished Issues</h2>
+        <p>Reviewing progress on ongoing <span>engineering projects</span> or <span>assignments</span>; <br>
+            Discussing any previously identified issues or roadblocks and what steps have been taken to address them; <br>
+            Reviewing <b>feedback</b> from previous project deliverables or assignments and identifying areas for improvement;<br>
+            Discussing any previous <strong>decisions</strong> made in past meetings and evaluating their impact on ongoing projects</p>
+
+        <hr>
+
+        <h2 id="new">New Issues</h2>
+        <p> <i>Brainstorming ideas</i> for new software engineering projects or assignments;<br>
+            <em>Reviewing industry trends</em> or new technologies and discussing how they could be incorporated into the course curriculum;<br>
+            <i>Discussing new software engineering tools</i> or methodologies and their potential use in course projects;<br>
+            <em>Identifying any areas of the course curriculum</em> that may need to be updated or revised in light of changing industry standards or student feedback</p>
+
+        <hr>
+
+        <h2 id="comment">Comment & Question</h2>
+
+        <p><b><i>Waiting for any comments and questions</i></b></p>
+        
+        <h3>Insert Comments Here</h3>
+        <h3>Insert Qustions Here</h3>
+
+        <hr>
+
+        <h2 id="multimedia">Images and multimedia</h2>
+
+        <img src="mindmap.png", alt="mindmap", width="600">
+
+        <br />
+
+        <audio width="300" controls>
+            <source src="blankspace.MOV">
+        </audio>
+        
+        <br>
+
+        <details>
+            <summary>Who is she?</summary>
+            Taylor Swift!
+        </details>
+
+        <video width="300" controls>
+            <source src="blankspace.MOV">
+        </video>
+
+    </main>
+
+    <hr>
+    
+    <footer>
+        <h3 id="info">Information Survey</h3>
+
+        <form onsubmit="alert('Thank you!!!')">
+            <input type="text" placeholder="Enter your name:">
+            <input type="text" placeholder="Enter email address:">
+            <button>Join</button>
+        </form>
+
+        <br>
+
+        <form onsubmit="alert('Submitted')">
+            <fieldset>
+                <label for="time">Select next meeting time:</label>
+
+                <select name="times" id="time">
+                    <option value="">--Please choose a day--</option>
+                    <option value="monday">Next Monday</option>
+                    <option value="tuesday">Next Tuesday </option>
+                    <option value="wednesday">Next Wednesday</option>
+                    <option value="thursday">Next Thursday</option>
+                </select>
+
+                <br>
+                <br>
+
+                <label for="hour">Select a time in that day:</label>
+                <input list="hours" id="hour" name="hour">
+                <datalist id="hours">
+                    <option value="">--Please choose a time--</option>
+                    <option value="Morning">Morning</option>
+                    <option value="Afternoon">Afternoon</option>
+                    <option value="Evening">Evening</option>
+                </datalist>
+
+                <br>
+                <br>
+
+                <label for="story">If these time don't work for you, let us your available time:</label>
+                <br>
+                <textarea id="story" name="story"
+                        rows="5" cols="33"> My available time is...
+                </textarea>
+
+                <br>
+                <button>Submit</button>
+            </fieldset>
+        </form>
+
+    </footer>
+
+  </body>
+</html>
+
+
+
+
+<!-- a title (e.g. "Pomodoro Timer First Brainstorm")
+
+subtitle for the meeting section/the topic of the meeting 
+    (e.g. "brainstorming", "check-ins", "documentation")
+
+subtitle for the date
+
+attendance list
+
+agenda of what the meeting will cover
+
+things that were unfinished business from last meeting
+
+things that are new business that need to be talked about
+
+any miscellaneous comments / questions / concerns that anyone would like to bring up
+
+pictures of any diagrams / architecture / things that were presented
+    SWE meetings often have people diagram things on a whiteboard 
+    so we want those captured as well
+
+For the following two, you can simply take a 30 second pretend audio recording 
+& video recording to use, we are just trying to get you familiar with the
+ <audio> and <video> elements. Yes, you must have both audio and video elements, 
+and yes, you can use the audio from the video you took for the audio element, 
+it just has to be in a separate audio file.
+    audio recording the meeting
+    video recording of the meeting -->
+
