@@ -1,0 +1,125 @@
+/* This file is to describe the presentation of meeting minutes */
+
+@font-face {
+    font-family: "myFont";
+    src: url("VinaSans-Regular.ttf");
+}
+
+/* Color and Background */
+@media screen, print {
+    header {
+        background-color: lightblue;
+        color: darkblue;
+    }
+}
+
+/* Unit */
+.cm {
+    font-size: 1cm;
+}
+
+.mm {
+    font-size: 6mm;
+}
+
+.in{
+    font-size: 0.2in;
+}
+
+.em {
+    font-size: 3em;
+}
+
+.ex {
+    font-size: 4ex;
+}
+
+.vw {
+    font-size: 2vw;
+  }
+
+
+/* Box Model */
+.block-long{
+  border: 2px solid red;
+  /* padding: .5em; */
+  margin-top: 0.5cm;
+  margin-bottom: 1cm;
+  margin-left: 0.5cm;
+  margin-right: 3cm;
+
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 0.6em;
+  padding-right: 0.6em;
+}
+
+.block-short{
+    border-style: dotted;
+    border-color: lightgreen;
+    border-width: 2px;
+    border-radius: 2px;
+
+    margin: 0.5cm 3cm 1cm 0.5cm;
+
+    padding: 0.5em 0.6em 0.5em 0.6em;
+}
+
+/* Text */
+p{
+    color: black;
+    text-decoration: double;
+    text-align: left;
+}
+
+/* Display */
+.inline-block {
+    display: inline-block;
+}
+
+.none{
+    display: none;
+}
+
+/* Sizing */
+.sizing{
+    height: 10cm;
+    width: 15cm;
+}
+
+.size-textarea{
+    max-width: 14cm;
+    min-width: 6cm;
+}
+
+/* Any button over which the user's pointer is hovering */
+button:hover {
+    color: grey;
+    /* background-color: lightgrey; */
+}
+
+button:active{
+    color: green;
+    background-color: lightgreen;
+    box-shadow: 2px 2px 5px green;
+}
+
+/* Layouts */
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: left;
+}
+
+.grid-container{
+    display: grid;
+    grid-auto-flow: column;
+    justify-items: auto;
+    justify-self: baseline;
+}
+
+
+/* Responsiveness */
+
+

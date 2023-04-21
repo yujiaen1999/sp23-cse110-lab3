@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head> 
+  <head>  
     <title>Meeting Minutes</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="cseicon.png">
+    <link rel="stylesheet" href="meetingstyle.css">
   </head>
 
   <body>
     <header>
-        <div>UCSD CSE110 Group Meeting</div>
-        <div>topic: brainstorming</div>
+        <div class="cm" font-family="myFont">UCSD CSE110 Group Meeting</div>
+        <div class="mm">topic: brainstorming</div>
         <nav>
-            <ul>
+            <ul class="in">
                 <li><a href="attendance">Attendance List</a></li>
                 <li><a href="agenda">Agenda</a></li>
                 <li><a href="unfinished">Unfinished Issues</a></li>
@@ -24,11 +25,11 @@
     </header>
 
     <main>
-        <h1>UCSD CSE110 Group Meeting</h1>
+        <h1 style="color:darkred;text-align:center;", class="em">UCSD CSE110 Group Meeting</h1>
 
         <hr>
 
-        <h2 id="attendance">Attendance List</h2>
+        <h2 id="attendance", class="ex">Attendance List</h2>
         <ol>
             <li>Jiaen Yu</li>
             <li>Anthony</li>
@@ -39,7 +40,7 @@
 
         <hr>
 
-        <h2 id="agenda">Agenda</h2>
+        <h2 id="agenda", class="vw">Agenda</h2>
         <ol>
             <li><input type="checkbox"> Welcome and Introductions</li>
             <li><input type="checkbox"> Review minutes from last meeting</li>
@@ -52,7 +53,7 @@
         <hr>
 
         <h2 id="unfinished">Unfinished Issues</h2>
-        <p>Reviewing progress on ongoing <span>engineering projects</span> or <span>assignments</span>; <br>
+        <p class="block-long">Reviewing progress on ongoing <span>engineering projects</span> or <span>assignments</span>; <br>
             Discussing any previously identified issues or roadblocks and what steps have been taken to address them; <br>
             Reviewing <b>feedback</b> from previous project deliverables or assignments and identifying areas for improvement;<br>
             Discussing any previous <strong>decisions</strong> made in past meetings and evaluating their impact on ongoing projects</p>
@@ -60,7 +61,7 @@
         <hr>
 
         <h2 id="new">New Issues</h2>
-        <p> <i>Brainstorming ideas</i> for new software engineering projects or assignments;<br>
+        <p class="block-short"> <i>Brainstorming ideas</i> for new software engineering projects or assignments;<br>
             <em>Reviewing industry trends</em> or new technologies and discussing how they could be incorporated into the course curriculum;<br>
             <i>Discussing new software engineering tools</i> or methodologies and their potential use in course projects;<br>
             <em>Identifying any areas of the course curriculum</em> that may need to be updated or revised in light of changing industry standards or student feedback</p>
@@ -72,13 +73,47 @@
         <p><b><i>Waiting for any comments and questions</i></b></p>
         
         <h3>Insert Comments Here</h3>
+        <ul class="inline-block">
+            <li>comment1</li>
+            <li>comment2</li>
+            <li>comment3</li>
+            <li>comment4</li>
+        </ul>
+
+        <ul class="flex-container">
+            <li>comment5</li>
+            <li>comment6</li>
+            <li>comment7</li>
+            <li>comment8</li>
+        </ul>
+        
+
         <h3>Insert Qustions Here</h3>
+        <article class="none">
+            <span>First</span>
+            <span>Second</span>
+            <span>Third</span>
+        </article>
+
+        <ul class="grid-container">
+            <li>question1</li>
+            <li>question2</li>
+            <li>question3</li>
+            <li>question4</li>
+        </ul>
+
+        <ul class="none">
+            <li>question5</li>
+            <li>question6</li>
+            <li>question7</li>
+            <li>question8</li>
+        </ul>
 
         <hr>
 
         <h2 id="multimedia">Images and multimedia</h2>
 
-        <img src="mindmap.png" alt="mindmap" width="600">
+        <img src="mindmap.png" alt="mindmap" width="500">
 
         <br>
 
@@ -112,7 +147,7 @@
 
         <br>
 
-        <form onsubmit="alert('Submitted')">
+        <form onsubmit="alert('Submitted')" class="sizing">
             <fieldset>
                 <label for="time">Select next meeting time:</label>
 
@@ -142,7 +177,7 @@
                 <label for="story">If these time don't work for you, let us your available time:</label>
                 <br>
                 <textarea id="story" name="story"
-                        rows="5" cols="33"> My available time is...
+                        rows="5" cols="33" class="size-textarea"> My available time is...
                 </textarea>
 
                 <br>
