@@ -120,13 +120,36 @@ button:active{
 }
 
 
-/* Responsiveness */
-
-
 
 /* selector */
-
 #unfinished{
     color: darkblue;
 }
 
+a[href="attendance"] {
+    color: purple;
+  }
+
+*{
+    color: black;
+}
+
+h2, h3{
+    font-style: normal;
+}
+
+ul li {
+    list-style-type: circle;
+  }
+
+p > span {
+    background-color: yellow;
+}
+
+p ~ span {
+    color: red;
+  }
+
+li:first-of-type + li {
+    color: red;
+}
